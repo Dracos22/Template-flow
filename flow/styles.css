@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.section {}
+
+.landing {
+    background-color: #000;
+    bottom: 0;
+    display: grid;
+    left: 0;
+    place-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.landing_content {
+    background: url("bg-home.png") no-repeat 50%;
+    background-color: var(--blackish6);
+    background-size: 113%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 659px;
+    width: 528px;
+    padding: 40px 0 20px;
+}
+
+.landing_content header {
+    display: flex;
+    justify-content: center;
+}
+
+.landing_content header .personal-flow-logo {
+    height: 39px;
+    width: 268px;
+}
+
+.landing_content main {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 328px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: roboto;
+}
+
+.landing_content main .description {
+    color: #fff;
+    font-size: 2.4em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.landing_content main .options {
+    display: flex;
+    flex-direction: column;
+    max-width: 328px;
+    width: 100%;
+}
+
+.landing_content main .options button:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.button {
+    border: 0;
+    border-radius: 4px;
+    color: #00123d;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 13px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.button.button_sign-in {
+    background-color: #80a5ff;
+}
+
+
+.button.button_secondary {
+    background-color: initial;
+    border: 1px solid #80a2f2;
+    color: #80a5ff;
+}
+
+@media screen and (max-width:480px) {
+    .landing_content {
+        width: 420px;
+
+    }
+}

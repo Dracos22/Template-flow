@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --blackish6: #121212;
+    --convergent-login-field: #2f2f2f;
+    --greyish: #9b9b9b;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+    font-weight: 400 !important;
+}
+
+.my-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.convergentLoginBackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.formContainer {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.convergentLoginFormWrapper {
+    width: 528px;
+    min-height: 500px;
+    background-color: var(--blackish6);
+    border-radius: 10px;
+    padding: 26.6px 50px 43.7px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: roboto;
+}
+
+#convergentLoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#convergentLoginForm .title {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0 70px;
+}
+
+#convergentLoginForm .title img {
+    width: 300px;
+    height: 45px;
+}
+
+.MuiFormControl-root {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+#convergentLoginForm #username-formControl {
+    margin-bottom: 6px;
+}
+
+#convergentLoginForm .form-control {
+    position: relative;
+    font-size: 16px;
+    margin-top: 3rem;
+    border-radius: 4px 4px 0 0;
+    background-color: var(--convergent-login-field);
+    height: 56px;
+    width: 328px;
+}
+
+.text-center {
+    width: 328px;
+    height: 56px;
+    margin-top: 3rem;
+}
+
+.button[type="submit"] {
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    background-color: #80a5ff80;
+    border: 1px solid #80a5ff80;
+    border-radius: 4px;
+    font-family: roboto;
+}
+
+.convergentforgotWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+.forgot-link {
+    font-family: roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    opacity: .67;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.col-1 {
+    padding: 0px 15px;
+    color: #ffffff;
+}
+
+#convergentLoginForm .form-control .login-input {
+    outline: none;
+    padding: 0.8em;
+    height: 100vh;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+
+.container-otp-and-code {}
+
+
+.opt_container .inputs__container:before {
+    background-color: var(--blackish6);
+    height: 23px;
+    top: -13px;
+    width: 26px;
+}
+
+.opt_container .inputs_container:after,
+.opt_container .inputs_container:before {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.opt_container .inputs_container:after {
+    background-color: initial;
+    border: 1px solid #c4c4c440;
+    border-radius: 25px;
+    height: 11px;
+    top: -6px;
+    width: 11px;
+}
+
+
+.opt_container .inputs_container {
+    isplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+    margin: 31px auto 0;
+    padding-top: 30px;
+    position: relative;
+}
+
+.button {
+    background-color: ;
+    border: 0;
+    border-radius: 4px;
+    color: #00123d;
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 13px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.button.button--secondary {
+    background-color: initial;
+    border: 1px solid #80a2f2;
+    color: #80a5ff;
+    cursor: pointer;
+}
+
+
+
+.convergentLoginFormWrapper .wrap-separator {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.convergentLoginFormWrapper .wrap-separator .separator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.convergentLoginFormWrapper .wrap-separator .separator::after {
+    content: '';
+    position: absolute;
+    background-color: #a7a7a7;
+    height: 1px;
+    width: 100em;
+    left: -50%;
+    top: 3px;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+.convergentLoginFormWrapper .wrap-separator .separator::before {
+    content: '';
+    height: 23px;
+    top: -8px;
+    position: absolute;
+    background: #f1f5f9;
+    width: 25px;
+    left: -9px;
+    right: 0px;
+    z-index: -1;
+}
+
+.opt_container .button.button--secondary-coupon {
+    margin-top: 55px;
+}
+
+.button.button--secondary-coupon {
+    text-transform: uppercase;
+    background-color: initial;
+    color: #fff;
+    display: flex;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    outline: none;
+}
+
+.button.button--secondary-coupon img {
+    width: 25px;
+    margin-right: 0.5em;
+}
+
+.help {
+    margin-top: 31px;
+    width: 100vw;
+}
+
+.help p {
+    text-align: center;
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 1.21;
+    margin-bottom: 1em;
+}
+
+.help p a {
+    color: #efefef;
+    font-size: 11px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: none !important;
+}
+
+.loginInfoWrapper {
+    margin-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.loginInfoWrapper p {
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: var(--greyish) !important;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:480px) {
+    .my-container {
+        width: 430px;
+    }
+
+    .convergentLoginFormWrapper {
+        width: ;
+    }
+}
